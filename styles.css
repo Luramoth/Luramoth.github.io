@@ -25,3 +25,18 @@ h1 {
     padding-top: 40px;
     padding-bottom: 40px;
 }
+img, h1 {
+    float: left;
+    display: block;
+    margin: 0;
+}
+header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.Buttons {
+    text-align: right;
+    margin-right: 20px;
+    line-height: 500%;
+}
