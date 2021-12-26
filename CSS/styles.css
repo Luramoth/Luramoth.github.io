@@ -1,15 +1,20 @@
+:root {
+	--Glight: #baffad;
+	--Gdark: #00992c;
+}
+
 body {
 	font-family: "Roboto", sans-serif;
-	background-color: #baffad;
+	background-color: var(--Glight);
   }
   
   header {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
-	background-color: #00992c;
+	background-color: var(--Gdark);
 	border-radius: 25px;
-	color: #baffad;
+	color: var(--Glight);
 	font-size: 25px;
 	text-shadow: 0px 0px 10px black;
 	box-shadow: 0px 0px 10px black inset;
@@ -48,10 +53,10 @@ body {
   }
   
   .header-buttons a {
-	background-color: #baffad;
+	background-color: var(--Glight);
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px black;
-	color: #00992c;
+	color: var(--Gdark);
 	display: block;
 	font-size: 30px;
 	padding: 10px;
@@ -61,16 +66,16 @@ body {
 	transition-duration: 0.5s;
   }
   .header-buttons a:hover {
-	background-color: #00992c;
-	color: #baffad;
+	background-color: var(--Gdark);
+	color: var(--Glight);
 	box-shadow: 0 0 20px black;
   }
 
   .header-buttons a.nav-dissabled {
-	background-color: #00992c;
+	background-color: var(--Gdark);
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px black;
-	color: #baffad;
+	color: var(--Glight);
 	display: block;
 	font-size: 30px;
 	padding: 10px;
@@ -80,10 +85,10 @@ body {
 	transition-duration: 0.5s;
   }
   .header-buttons a.nav-dissabled:hover {
-	background-color: #00992c;
+	background-color: var(--Gdark);
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px black inset;
-	color: #baffad;
+	color: var(--Glight);
 	display: block;
 	font-size: 30px;
 	padding: 10px;
@@ -94,7 +99,7 @@ body {
   }
 
 .title {
-	color: #baffadff;
+	color: var(--Glight);
 	text-shadow: 0px 0px 10px black, 0px 0px 10px black;
 	font-size: 50px;
 	padding-left: 100px;
@@ -107,8 +112,8 @@ body {
 	border-radius: 25px;
 	padding: 20px;
 	position: static;
-	color: #baffadff;
-	background-color: #00992cff;
+	color: var(--Glight);
+	background-color: var(--Gdark);
 	font-size: 25px;
 	text-shadow: 0px 0px 10px black;
 	box-shadow: 0px 0px 10px black inset;
