@@ -1,112 +1,100 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #baffadff;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
+	font-family: "Roboto", sans-serif;
+	background-color: #baffad;
+  }
+  
+  header {
+	display: flex;
+	justify-content: space-between;
+	padding: 16px;
+	background-color: #00992c;
+	border-radius: 25px;
+	color: #baffad;
+	font-size: 25px;
+	text-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 10px black inset;
+  }
+  
+  .header-logo {
+	display: flex;
+	align-items: center;
+	gap: 20px;
   }
 
-header {
-    text-align: left;
-    border-radius: 25px;
-    position: sticky;
-    padding: 0px;
-    color: #baffadff;
-    background-color: #00992cff;
-    font-size: 25px;
-    text-shadow: 0px 0px 10px black;
-    box-shadow: 0px 0px 10px black inset;
+  .logo {
+	filter: drop-shadow(0px 0px 10px black);
+  }
+  
+  .header-buttons {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+  }
+  
+  .header-buttons a {
+	background-color: #baffad;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px black;
+	color: #00992c;
+	display: block;
+	font-size: 30px;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: none;
+	transition-duration: 0.5s;
+  }
+  .header-buttons a:hover {
+	background-color: #00992c;
+	color: #baffad;
+	box-shadow: 0 0 20px black;
+  }
+
+  .header-buttons a.nav-dissabled {
+	background-color: #00992c;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px black;
+	color: black;
+	display: block;
+	font-size: 30px;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: none;
+	transition-duration: 0.5s;
+  }
+  .header-buttons a.nav-dissabled:hover {
+	background-color: #00992c;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px black inset;
+	color: black;
+	display: block;
+	font-size: 30px;
+	padding: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: none;
+	cursor: not-allowed;
+  }
+
+.title {
+	color: #baffadff;
+	text-shadow: 0px 0px 10px black, 0px 0px 10px black;
+	font-size: 50px;
+	padding-left: 100px;
+	float: none;
+	text-align: left;
 }
 
-.Logo {
-    margin: 0px;
-    float: left;
-    padding: 20px;
-    filter: drop-shadow(0px 0px 10px black);
-}
-h1 {
-    position: relative;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-img, h1 {
-    float: left;
-    display: block;
-    margin: 0;
-}
-
-header::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.Buttons {
-    text-align: right;
-    margin-right: 20px;
-    line-height: 500%;
-    padding-top: 10px;
-    display: flex;
-    gap: 20px;
-}
-
-button {
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    background-color: #baffadff;
-    color: #00992cff;
-    font-size: 30px;
-    box-shadow: 0px 0px 10px black;
-
-    transition-duration: 0.5s;
-}
-button:hover {
-    background-color: #00992cff;
-    color: #baffadff;
-    box-shadow: 0px 0px 20px black;
-    cursor: pointer;
-}
-
-.Dissabled {
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    background-color: #00992cff;
-    color: black;
-    font-size: 30px;
-    box-shadow: 0px 0px 10px black inset;
-}
-.Dissabled:hover {
-    cursor: not-allowed;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    background-color: #00992cff;
-    color: black;
-    font-size: 30px;
-    box-shadow: 0px 0px 10px black inset;
-}
-
-.Title {
-    color: #baffadff;
-    text-shadow: 0px 0px 10px black, 0px 0px 10px black;
-    font-size: 50px;
-    padding-left: 100px;
-    float: none;
-    text-align: left;
-}
-
-.Content {
-    text-align: left;
-    border-radius: 25px;
-    padding: 20px;
-    position: static;
-    color: #baffadff;
-    background-color: #00992cff;
-    font-size: 25px;
-    text-shadow: 0px 0px 10px black;
-    box-shadow: 0px 0px 10px black inset;
-    top: 100px;
+.content {
+	text-align: left;
+	border-radius: 25px;
+	padding: 20px;
+	position: static;
+	color: #baffadff;
+	background-color: #00992cff;
+	font-size: 25px;
+	text-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 10px black inset;
+	top: 100px;
 }
