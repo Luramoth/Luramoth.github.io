@@ -39,4 +39,22 @@ header::after {
     text-align: right;
     margin-right: 20px;
     line-height: 500%;
+    padding-top: 10px;
+}
+button {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #baffadff;
+    color: #00992cff;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px black;
+
+    transition-duration: 0.5s;
+}
+button:hover {
+    background-color: #00992cff;
+    color: #baffadff;
+    box-shadow: 0px 0px 20px black;
+    cursor: pointer;
 }
