@@ -71,7 +71,7 @@ button:hover {
     background-color: #00992cff;
     color: black;
     font-size: 30px;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px black inset;
 }
 .Dissabled:hover {
     cursor: not-allowed;
@@ -81,7 +81,7 @@ button:hover {
     background-color: #00992cff;
     color: black;
     font-size: 30px;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px black inset;
 }
 
 .Title {
