@@ -19,7 +19,36 @@ body {
 	text-shadow: 0px 0px 10px black;
 	box-shadow: 0px 0px 10px black inset;
   }
+
+  p {
+	  text-align: center;
+	  text-align-last: left;
+  }
   
+  a:link {
+	  color: white;
+	  text-shadow: 0 0 20px var(--Glight);
+	  opacity: 1;
+	  transition-duration: 0.2s;
+  }
+  a:visited {
+	color: var(--Glight);
+	text-shadow: 0 0 10px black;
+  }
+  a:hover {
+	color: white;
+	text-shadow: 0 0 40px var(--Gdark);
+  }
+  a:active {
+	color: white;
+	text-shadow: 0 0 50px black;
+	transform: scale(2, 2);
+  }
+
+  li {
+	  font-weight: bold;
+  }
+
   .header-logo {
 	display: flex;
 	align-items: center;
@@ -63,7 +92,7 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 	text-shadow: none;
-	transition-duration: 0.5s;
+	transition-duration: 0.2s;
   }
   .header-buttons a:hover {
 	background-color: var(--Gdark);
@@ -83,7 +112,7 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 	text-shadow: none;
-	transition-duration: 0.5s;
+	transition-duration: 0.2s;
   }
   .header-buttons a.github-button:hover {
 	box-shadow: 0px 0px 20px white;
@@ -101,7 +130,7 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 	text-shadow: none;
-	transition-duration: 0.5s;
+	transition-duration: 0.2s;
   }
   .header-buttons a.nav-dissabled:hover {
 	background-color: var(--Gdark);
