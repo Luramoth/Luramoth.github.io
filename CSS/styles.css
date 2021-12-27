@@ -39,11 +39,6 @@ body {
 	color: white;
 	text-shadow: 0 0 40px var(--Gdark);
   }
-  a:active {
-	color: white;
-	text-shadow: 0 0 50px black;
-	transform: scale(2, 2);
-  }
 
   li {
 	  font-weight: bold;
