@@ -114,7 +114,7 @@ body {
 	transform: scale(1.2, 1.2);
   }
 
-  .header-buttons a.nav-dissabled {
+  .header-buttons a.nav-disabled {
 	background-color: var(--Gdark);
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px black;
@@ -127,7 +127,7 @@ body {
 	text-shadow: none;
 	transition-duration: 0.2s;
   }
-  .header-buttons a.nav-dissabled:hover {
+  .header-buttons a.nav-disabled:hover {
 	background-color: var(--Gdark);
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px black inset;
