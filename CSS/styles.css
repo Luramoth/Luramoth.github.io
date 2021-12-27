@@ -71,6 +71,25 @@ body {
 	box-shadow: 0 0 20px black;
   }
 
+  .header-buttons a.github-button {
+	background-color: black;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px black;
+	color: white;
+	display: block;
+	font-size: 30px;
+	padding: 10px;
+	padding-top: 15px;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: none;
+	transition-duration: 0.5s;
+  }
+  .header-buttons a.github-button:hover {
+	box-shadow: 0px 0px 20px white;
+	transform: scale(1.2, 1.2);
+  }
+
   .header-buttons a.nav-dissabled {
 	background-color: var(--Gdark);
 	border-radius: 20px;
@@ -95,7 +114,7 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 	text-shadow: none;
-	cursor: not-allowed;
+	cursor: default;
   }
 
 .title {
