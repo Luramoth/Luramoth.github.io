@@ -17,7 +17,7 @@ body {
 	color: var(--Glight);
 	font-size: 25px;
 	text-shadow: 0px 0px 10px black;
-	box-shadow: 0px 0px 10px black inset;
+	/*box-shadow: 0px 0px 10px black inset;*/
   }
 
   p {
@@ -159,6 +159,6 @@ body {
 	background-color: var(--Gdark);
 	font-size: 25px;
 	text-shadow: 0px 0px 10px black;
-	box-shadow: 0px 0px 10px black inset;
+	/*box-shadow: 0px 0px 10px black inset;*/
 	top: 100px;
 }
