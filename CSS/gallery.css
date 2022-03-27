@@ -21,4 +21,36 @@
 
 .gallery-content {
 	width: 90%;
+	font-size: larger;
+}
+
+.gallery-sections {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.section {
+	width: 425px;
+	height: 500px;
+	margin-top: 20px;
+}
+.section img {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+
+	width: 425px;
+	height: 500px;
+
+	object-fit: cover;
+	object-position: center;
+}
+.section div {
+	background-color: #baffad;
+	position: relative;
+
+	left: 200px;
+	top: 250px;
 }
