@@ -161,8 +161,6 @@ body {
 	background-color: var(--Gdark);
 	outline: 5px;
 	font-size: 25px;
-	text-shadow: 0px 0px 10px black;
-	/*box-shadow: 0px 0px 10px black inset;*/
 	top: 100px;
 }
 
