@@ -33,24 +33,46 @@
 }
 
 .section {
-	width: 425px;
-	height: 500px;
 	margin-top: 20px;
-}
-.section img {
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-
+	position: relative;
 	width: 425px;
 	height: 500px;
+	transition-duration: 0.2s;
+}
 
+.section img {
+	position: absolute;
+	width: 425px;
+	height: 500px;
+	left: 0px;
+	top: 0px;
 	object-fit: cover;
 	object-position: center;
-}
-.section div {
-	background-color: #baffad;
-	position: relative;
 
-	left: 200px;
-	top: 250px;
+	border-radius: 15px;
+}
+.section:hover img {
+	box-shadow: 0px 0px 20px white;
+	transform: scale(1.1,1.1);
+}
+
+.section div {
+	position: absolute;
+	width: 425px;
+	height: 147px;
+	left: 0px;
+	top: 353px;
+
+	border-radius: 15px;
+	background: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	text-shadow: 0px 0px 10px white;
+	font-size: 20px;
+
+	/* Note: backdrop-filter has minimal browser support */
+	backdrop-filter: blur(10px);
+}
+.section div h3 {
+	font-size: 30px;
+	color: white;
 }
