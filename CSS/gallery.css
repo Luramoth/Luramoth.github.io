@@ -1,0 +1,23 @@
+:root {
+	--Glight: #baffad;
+	--Gdark: #00992c;
+}
+
+.gallery-body {
+    display: flex;
+}
+
+.body-flex {
+    background-color: var(--Gdark) ;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 5px;
+}
+
+.sidebar {
+    width: 10%;
+}
+
+.gallery-content {
+    width: 90%;
+}
