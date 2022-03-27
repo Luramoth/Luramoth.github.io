@@ -4,20 +4,21 @@
 }
 
 .gallery-body {
-    display: flex;
+	display: flex;
 }
 
 .body-flex {
-    background-color: var(--Gdark) ;
-    border-radius: 25px;
-    padding: 20px;
-    margin: 5px;
+	background-color: var(--Gdark) ;
+	color: var(--Glight);
+	border-radius: 25px;
+	padding: 20px;
+	margin: 5px;
 }
 
 .sidebar {
-    width: 10%;
+	width: 10%;
 }
 
 .gallery-content {
-    width: 90%;
+	width: 90%;
 }
