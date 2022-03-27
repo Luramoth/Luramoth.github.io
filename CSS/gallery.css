@@ -50,6 +50,9 @@
 	object-position: center;
 
 	border-radius: 15px;
+
+	box-shadow: 0px 0px 10px black;
+	transform: scale(1,1);
 }
 .section:hover img {
 	box-shadow: 0px 0px 20px white;
