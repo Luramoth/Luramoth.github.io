@@ -101,14 +101,9 @@ body {
 	background-color: black;
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px black;
-	color: white;
 	display: block;
-	font-size: 30px;
 	padding: 10px;
 	padding-top: 15px;
-	text-decoration: none;
-	font-weight: bold;
-	text-shadow: none;
 	transition-duration: 0.2s;
   }
   .header-buttons a.github-button:hover {
@@ -159,7 +154,6 @@ body {
 	position: static;
 	color: var(--Glight);
 	background-color: var(--Gdark);
-	outline: 5px;
 	font-size: 25px;
 	top: 100px;
 }
@@ -171,7 +165,6 @@ footer {
 	position: static;
 	color: var(--Gdark);
 	background-color: var(--Glight);
-	outline: 5px;
 	font-size: 25px;
 	top: 100px;
 }
