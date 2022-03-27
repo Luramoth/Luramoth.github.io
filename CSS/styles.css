@@ -3,10 +3,16 @@
 	--Gdark: #00992c;
 }
 
+@media (orientation:portrait) {
+	.header-logo h1 {
+		display: none;
+	}
+}
+
 body {
 	font-family: "Roboto", sans-serif;
 	background-color: var(--Glight);
-  }
+}
   
   header {
 	display: flex;

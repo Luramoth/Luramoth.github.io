@@ -3,6 +3,12 @@
 	--Gdark: #00992c;
 }
 
+@media (orientation:portrait) {
+	.sidebar {
+		display: none;
+	}
+}
+
 .gallery-body {
 	display: flex;
 }
