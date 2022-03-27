@@ -26,7 +26,9 @@ body {
   }
   
   a:link {
-	  color: white;
+	  color: white;    display: flex;
+	  align-items: center;
+	  gap: 20px;
 	  text-shadow: 0 0 20px var(--Glight);
 	  opacity: 1;
 	  transition-duration: 0.2s;
@@ -142,8 +144,8 @@ body {
   }
 
 .title {
-	color: var(--Glight);
-	text-shadow: 0px 0px 10px black, 0px 0px 10px black;
+	color: var(--Gdark);
+	text-shadow: 0px 0px 20px var(--Gdark);
 	font-size: 50px;
 	padding-left: 100px;
 	float: none;
@@ -157,8 +159,21 @@ body {
 	position: static;
 	color: var(--Glight);
 	background-color: var(--Gdark);
+	outline: 5px;
 	font-size: 25px;
 	text-shadow: 0px 0px 10px black;
 	/*box-shadow: 0px 0px 10px black inset;*/
+	top: 100px;
+}
+
+footer {
+	text-align: left;
+	border-radius: 25px;
+	padding: 20px;
+	position: static;
+	color: var(--Gdark);
+	background-color: var(--Glight);
+	outline: 5px;
+	font-size: 25px;
 	top: 100px;
 }
