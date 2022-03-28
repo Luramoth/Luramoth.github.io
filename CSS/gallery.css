@@ -3,19 +3,6 @@
 	--Gdark: #00992c;
 }
 
-@media (orientation:portrait) {
-	.sidebar {
-		display: none;
-		width: 0%;
-	}
-	.sidebar-link {
-		display: none;
-	}
-	.sidebar a {
-		display: none;
-	}
-}
-
 .gallery-body {
 	display: flex;
 }
@@ -37,6 +24,7 @@
 .sidebar a {
 	color: var(--Gdark);
 	text-align: center;
+	justify-content: center;
 }
 .sidebar-link {
 	background-color: var(--Glight);
@@ -120,4 +108,21 @@
 .section div h3 {
 	font-size: 30px;
 	color: white;
+}
+
+@media (orientation:portrait) {
+	.sidebar {
+		display: none;
+	}
+	.sidebar-link {
+		display: none;
+	}
+	.sidebar a {
+		display: none;
+	}
+	.gallery-content {
+		border-radius: 0;
+		margin: 0;
+		width: 100%;
+	}
 }

@@ -177,3 +177,16 @@ footer {
 	font-size: 25px;
 	top: 100px;
 }
+
+@media (orientation:portrait) {
+	header {
+		border-radius: 0;
+		margin: 0;
+		width: 100% - 10px;
+	}
+	.content {
+		border-radius: 0;
+		margin: 0;
+		width: 100%;
+	}
+}
