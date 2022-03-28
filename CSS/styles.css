@@ -1,6 +1,7 @@
 :root {
 	--Glight: #baffad;
 	--Gdark: #00992c;
+	--Gdarker: #00681d;
 }
 
 @media (orientation:portrait) {
@@ -11,7 +12,7 @@
 
 body {
 	font-family: "Roboto", sans-serif;
-	background-color: var(--Glight);
+	background-color: var(--Gdarker);
 }
   
 header {
@@ -86,10 +87,10 @@ li {
 }
   
 .header-buttons a {
-	background-color: var(--Glight);
+	background-color: var(--Gdark);
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px black;
-	color: var(--Gdark);
+	color: var(--Glight);
 	display: block;
 	font-size: 30px;
 	padding: 10px;
@@ -99,8 +100,8 @@ li {
 	transition-duration: 0.2s;
 }
 .header-buttons a:hover {
-	background-color: var(--Gdark);
-	color: var(--Glight);
+	background-color: var(--Glight);
+	color: var(--Gdark);
 	box-shadow: 0 0 20px black;
 }
 
@@ -119,9 +120,9 @@ li {
 }
 
 .header-buttons a.nav-disabled {
-	background-color: var(--Gdark);
+	background-color: var(--Gdarker);
 	border-radius: 20px;
-	box-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 10px black inset;
 	color: var(--Glight);
 	display: block;
 	font-size: 30px;
@@ -132,9 +133,9 @@ li {
 	transition-duration: 0.2s;
 }
 .header-buttons a.nav-disabled:hover {
-	background-color: var(--Gdark);
+	background-color: var(--Gdarker);
 	border-radius: 20px;
-	box-shadow: 0px 0px 10px black inset;
+	box-shadow: 0px 0px 20px black inset;
 	color: var(--Glight);
 	display: block;
 	font-size: 30px;
@@ -146,7 +147,7 @@ li {
 }
 
 .title {
-	color: var(--Gdark);
+	color: var(--Glight);
 	text-shadow: 0px 0px 20px var(--Gdark);
 	font-size: 50px;
 	padding-left: 100px;
@@ -171,9 +172,10 @@ footer {
 	text-align: left;
 	border-radius: 25px;
 	padding: 20px;
+	margin: 5px;
 	position: static;
-	color: var(--Gdark);
-	background-color: var(--Glight);
+	color: var(--Glight);
+	background-color: var(--Gdark);
 	font-size: 25px;
 	top: 100px;
 }
