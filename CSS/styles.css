@@ -14,7 +14,7 @@ body {
 	background-color: var(--Glight);
 }
   
-  header {
+header {
 	display: flex;
 	justify-content: space-between;
 	padding: 20px;
@@ -24,68 +24,68 @@ body {
 	font-size: 25px;
 	text-shadow: 0px 0px 10px black;
 	/*box-shadow: 0px 0px 10px black inset;*/
-  }
+}
 
-  p {
+p {
 	  text-align: center;
 	  text-align-last: left;
-  }
+}
   
-  a:link {
+a:link {
 	  color: white;    display: flex;
 	  align-items: center;
 	  gap: 20px;
 	  text-shadow: 0 0 20px var(--Glight);
 	  opacity: 1;
 	  transition-duration: 0.2s;
-  }
-  a:visited {
+}
+a:visited {
 	color: var(--Glight);
 	text-shadow: 0 0 10px black;
-  }
-  a:hover {
+}
+a:hover {
 	color: white;
 	text-shadow: 0 0 40px var(--Gdark);
-  }
+}
 
-  li {
+li {
 	  font-weight: bold;
-  }
+}
 
-  .header-logo {
+.header-logo {
 	display: flex;
 	align-items: center;
 	gap: 20px;
-  }
+}
 
-  .header-logo h1 {
+.header-logo h1 {
 	transition-duration: 0.2s;
 	transition-timing-function: ease-in-out;
-  }
-  .header-logo h1:hover {
+}
+.header-logo h1:hover {
 	  text-shadow: 0 0 20 black;
 	  transform: matrix(1.2, 0.3, -0.3, 1.2, 0, 0);
-  }
+}
 
-  .logo {
+.logo {
 	filter: drop-shadow(0px 0px 10px black);
 	padding: 10px;
 	transition-duration: 0.2s;
 	transition-timing-function: ease-in-out;
-  }
-  .logo:hover {
+}
+.logo:hover {
 	  filter: drop-shadow(0 0 20px black);
 	  transform: matrix(1.2, -0.3, 0.3, 1.2, 0, 0);
-  }
+}
   
-  .header-buttons {
+.header-buttons {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 20px;
-  }
+}
   
-  .header-buttons a {
+.header-buttons a {
 	background-color: var(--Glight);
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px black;
@@ -97,14 +97,14 @@ body {
 	font-weight: bold;
 	text-shadow: none;
 	transition-duration: 0.2s;
-  }
-  .header-buttons a:hover {
+}
+.header-buttons a:hover {
 	background-color: var(--Gdark);
 	color: var(--Glight);
 	box-shadow: 0 0 20px black;
-  }
+}
 
-  .header-buttons a.github-button {
+.header-buttons a.github-button {
 	background-color: black;
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px black;
@@ -112,13 +112,13 @@ body {
 	padding: 10px;
 	padding-top: 15px;
 	transition-duration: 0.2s;
-  }
-  .header-buttons a.github-button:hover {
+}
+.header-buttons a.github-button:hover {
 	box-shadow: 0px 0px 20px white;
 	transform: scale(1.2, 1.2);
-  }
+}
 
-  .header-buttons a.nav-disabled {
+.header-buttons a.nav-disabled {
 	background-color: var(--Gdark);
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px black;
@@ -130,8 +130,8 @@ body {
 	font-weight: bold;
 	text-shadow: none;
 	transition-duration: 0.2s;
-  }
-  .header-buttons a.nav-disabled:hover {
+}
+.header-buttons a.nav-disabled:hover {
 	background-color: var(--Gdark);
 	border-radius: 20px;
 	box-shadow: 0px 0px 10px black inset;
@@ -143,7 +143,7 @@ body {
 	font-weight: bold;
 	text-shadow: none;
 	cursor: default;
-  }
+}
 
 .title {
 	color: var(--Gdark);
@@ -182,7 +182,7 @@ footer {
 	header {
 		border-radius: 0;
 		margin: 0;
-		width: 100% - 10px;
+		width: 100%;
 	}
 	.content {
 		border-radius: 0;
