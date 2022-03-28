@@ -66,8 +66,6 @@
 	position: relative;
 	width: 425px;
 	height: 500px;
-	transition-duration: 0.2s;
-	transition-timing-function: ease-in-out;
 }
 
 .section img {
@@ -82,11 +80,13 @@
 	border-radius: 15px;
 
 	box-shadow: 0px 0px 10px black;
-	transform: scale(1,1);
+	transition-duration: 0.2s;
 }
 .section:hover img {
 	box-shadow: 0px 0px 20px white;
 	transform: scale(1.1,1.1);
+
+	transition-duration: 0.2s;
 }
 
 .section div {
@@ -99,7 +99,7 @@
 	border-radius: 15px;
 	background: rgba(255, 255, 255, 0.25);
 	text-align: center;
-	text-shadow: 0px 0px 10px white;
+	text-shadow: 0px 0px 10px var(--Gdark);
 	font-size: 20px;
 
 	/* Note: backdrop-filter has minimal browser support */
