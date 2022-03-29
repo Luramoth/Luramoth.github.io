@@ -187,13 +187,9 @@ footer {
 
 @media (orientation:portrait) {
 	header {
-		border-radius: 0;
-		margin: 0;
 		width: 100%;
 	}
 	.content {
-		border-radius: 0;
-		margin: 0;
 		width: 100%;
 	}
 }
