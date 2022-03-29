@@ -180,6 +180,11 @@ footer {
 	top: 100px;
 }
 
+::selection {
+	color: var(--Gdark);
+	background: var(--Glight);
+}
+
 @media (orientation:portrait) {
 	header {
 		border-radius: 0;
