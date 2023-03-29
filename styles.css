@@ -30,11 +30,19 @@ body {
 .Logo {
 	background-color: var(--dark);
 	border-radius: 15px;
+	color: white;
 
 	display: flex;
 	padding-right: 10px;
 
 	user-select: none;
+	text-decoration: none;
+
+	transition-duration: 0.2s;
+}
+
+.Logo:hover {
+	transform: matrix(1.2, -0.1, 0.1, 1.2, 0, 0);
 }
 
 .Icon {
