@@ -2,9 +2,16 @@
 	--dark: #770077;
 }
 
+@font-face {
+	font-family: 'Font Name';
+	src: url('Fonts/PT_Mono/PTMono-Regular.ttf') format('truetype'),
+		url('Fonts/PT_Mono/PTMono-Regular.woff') format('woff'),
+		url('Fonts/PT_Mono/PTMono-Regular.woff2') format('woff2');
+}
 
 body {
 	background-color: var(--dark);
+	font-family: 'PT Mono', monospace;
 }
 
 .Header{
