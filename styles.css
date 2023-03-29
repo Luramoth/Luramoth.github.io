@@ -33,9 +33,23 @@ body {
 
 	display: flex;
 	padding-right: 10px;
+
+	user-select: none;
 }
 
 .Icon {
 	width: 100px;
 	margin-right: 10px;
+}
+
+@media (orientation:portrait) {
+	.Logo {
+		background-color: magenta;
+		padding-right: 0%;
+		font-size: 0%;
+	}
+
+	.icon {
+		margin-right: 0%;
+	}
 }
