@@ -57,15 +57,16 @@ body {
 	gap: 20px;
 }
 
-.HeaderButtons button {
+/* .HeaderButtons button {
 	background-color: var(--dark);
 	border-radius: 15px;
 	height: 70px;
+	border-style: hidden;
 
 	color: white;
 	font-family: 'PT Mono', monospace;
 	font-size: larger;
-}
+} */
 
 @media (orientation:portrait) {
 	.Logo {

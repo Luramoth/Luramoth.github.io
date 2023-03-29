@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html>
- 	 <head>
-		<title>Luramoth</title>
-		<!-- Metadata -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Luramoth official website">
-		<meta name="author" content="Lura">
-		<meta name="generator" content="http://chalarangelo.github.io/htmltemplategenerator/">
-		
-		<meta property="og:title" content="Luramoth!">
-		<meta property="og:site_name" content="Home">
-		<meta property="og:url" content="https://luramoth.github.io/index.html">
-		<meta property="og:type" content="website">
-		<meta name="theme-color" content="#ff00ff" />
 
-		<script src="script.js"></script> 
-		<link rel="stylesheet" href="styles.css">
- 		</head>
- 	 <body>
-		<div includeHTML = "header.html"></div>
-		<script>
-			includeHTML();
-		</script>
-	</body>
+<head>
+	<title>Luramoth</title>
+	<!-- Metadata -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Luramoth official website">
+	<meta name="author" content="Lura">
+	<meta name="generator" content="http://chalarangelo.github.io/htmltemplategenerator/">
+
+	<meta property="og:title" content="Luramoth!">
+	<meta property="og:site_name" content="Home">
+	<meta property="og:url" content="https://luramoth.github.io/index.html">
+	<meta property="og:type" content="website">
+	<meta name="theme-color" content="#ff00ff" />
+
+	<script src="JS/app.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<main>
+		<div class="Header">
+			<a class="Logo" href="index.html">
+				<img src="Images/Logo.svg" class="Icon">
+				<h1><b>Luramoth</b></h1>
+			</a>
+
+			<div class="HeaderButtons">
+				<button id="homeButton">Home</button>
+				<button id="projectButton">Projects</button>
+			</div>
+		</div>
+		<div id="content">
+			<!-- The content will be loaded here -->
+		</div>
+	</main>
+	<script>
+		// Get the buttons
+		const homeButton = document.getElementById('homeButton');
+		const projectButton = document.getElementById('projectButton');
+
+		console.log(content)
+
+		// Add click event listeners to the buttons
+		addPageLoadListener(homeButton, 'pages/home.html');
+		addPageLoadListener(projectButton, 'pages/projects.html');
+
+		// Load page content using Ajax
+		function loadPage(url) {
+			fetch(url)
+				.then(response => response.text())
+				.then(html => {
+					content.innerHTML = html;
+				})
+				.catch(error => console.error(error));
+		}
+
+		// Helper function to add a click event listener to a button to load a page
+		function addPageLoadListener(button, url) {
+			button.addEventListener('click', () => {
+				loadPage(url);
+			});
+		}
+	</script>
+</body>
+
 </html>
