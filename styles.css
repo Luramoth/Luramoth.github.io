@@ -50,6 +50,23 @@ body {
 	margin-right: 10px;
 }
 
+.HeaderButtons {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.HeaderButtons button {
+	background-color: var(--dark);
+	border-radius: 15px;
+	height: 70px;
+
+	color: white;
+	font-family: 'PT Mono', monospace;
+	font-size: larger;
+}
+
 @media (orientation:portrait) {
 	.Logo {
 		background-color: magenta;
