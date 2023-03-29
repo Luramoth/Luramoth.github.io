@@ -16,7 +16,26 @@ body {
 
 .Header{
 	background-color: magenta;
-	padding: 50px;
 	border-radius: 20px;
 	margin: 20px;
+	
+	padding: 50px;
+	display: flex;
+	justify-content: space-between;
+
+	color: white;
+	font-size: larger;
+}
+
+.Logo {
+	background-color: var(--dark);
+	border-radius: 15px;
+
+	display: flex;
+	padding-right: 10px;
+}
+
+.Icon {
+	width: 100px;
+	margin-right: 10px;
 }
