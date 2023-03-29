@@ -1,0 +1,15 @@
+:root {
+	--dark: #770077;
+}
+
+
+body {
+	background-color: var(--dark);
+}
+
+.Header{
+	background-color: magenta;
+	padding: 50px;
+	border-radius: 20px;
+	margin: 20px;
+}
