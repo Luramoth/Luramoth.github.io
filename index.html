@@ -59,7 +59,13 @@
 				})
 				.then(html => {
 					content.innerHTML = html;
-					history.pushState(null, "", pathname);
+
+					// change the URL only if the cite isent locally hosted (say if it's up on https://Luramoth.Github.io :3)
+					if (window.location.protocol === 'http:' && window.location.hostname === 'localhost' !== -1) {
+						return;
+					} else {
+						history.pushState(null, "", pathname);
+					}
 				})
 				.catch(error => console.log(error));
 		}
@@ -71,10 +77,6 @@
 				loadPage(url);
 			});
 		}
-
-		window.addEventListener('beforeunload', function () {
-			window.location.replace('index.html');
-		});
 
 	</script>
 </body>
