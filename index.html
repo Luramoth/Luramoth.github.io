@@ -16,7 +16,6 @@
 	<meta property="og:type" content="website">
 	<meta name="theme-color" content="#ff00ff" />
 
-	<script src="JS/app.js"></script>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
@@ -45,18 +44,26 @@
 		console.log(content)
 
 		// Add click event listeners to the buttons
-		addPageLoadListener(homeButton, 'pages/home.html');
-		addPageLoadListener(projectButton, 'pages/projects.html');
+		addPageLoadListener(homeButton, 'home');
+		addPageLoadListener(projectButton, 'projects');
 
 		// Load page content using Ajax
-		function loadPage(url) {
-			fetch(url)
-				.then(response => response.text())
+		function loadPage(pathname) {
+			fetch(`pages/${pathname}.html`)
+				.then(response => {
+					if (response.ok) {
+						return response.text();
+					} else {
+						throw new Error("Page not found.");
+					}
+				})
 				.then(html => {
 					content.innerHTML = html;
+					history.pushState(null, "", pathname);
 				})
-				.catch(error => console.error(error));
+				.catch(error => console.log(error));
 		}
+
 
 		// Helper function to add a click event listener to a button to load a page
 		function addPageLoadListener(button, url) {
@@ -64,6 +71,11 @@
 				loadPage(url);
 			});
 		}
+
+		window.addEventListener('beforeunload', function () {
+			window.location.replace('index.html');
+		});
+
 	</script>
 </body>
 
