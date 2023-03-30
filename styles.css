@@ -12,13 +12,14 @@
 body {
 	background-color: var(--dark);
 	font-family: 'PT Mono', monospace;
+	font-size: larger;
 }
 
-.Header{
+.Header {
 	background-color: magenta;
 	border-radius: 20px;
 	margin: 20px;
-	
+
 	padding: 50px;
 	display: flex;
 	justify-content: space-between;
@@ -34,9 +35,11 @@ body {
 
 	display: flex;
 	padding-right: 10px;
+	align-items: center;
 
 	user-select: none;
 	text-decoration: none;
+	font-size: large;
 
 	transition-duration: 0.2s;
 }
@@ -67,6 +70,12 @@ body {
 	color: white;
 	font-family: 'PT Mono', monospace;
 	font-size: larger;
+}
+
+.Content {
+	background-color: magenta;
+	border-radius: 20px;
+	margin: 20px;
 }
 
 @media (orientation:portrait) {
